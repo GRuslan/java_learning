@@ -1,16 +1,23 @@
-
-class Suma {
-  public static void main(String[] args){
-	  int n=-2;int sign;
-	  if (n == 0) {
-		  sign = 0;
-		  } else if (n < 0) {
-		  sign = -1;
-		  } else {
-		  sign = 1;
-		  }
-	  System.out.println(sign);
-	  }
+public class Suma{
+    public static void main(String[] args) {
+        int a=2, b=3, k=4;
+        double a1=2.10, b1=4.20, k1=5.30;
+        System.out.println("—ума трьох ц≥лих чисел дор≥внюЇ: "+sum(a, b, k));
+        System.out.println("—ума трьох дробових чисел дор≥внюЇ: "+sum(a1, b1, k1));
+        System.out.println("—ума одного ц≥лого числа та одного дробового дор≥внюЇ: "+sum(a, k1));
+    }
+    public static int sum (int a, int b, int c){
+        System.out.print("1-й метод.");
+        return a+b+c;
+    }
+    public static double sum (double a, double b, double c){
+        System.out.print("2-й метод.");
+        return a+b+c;
+    }
+    public static double sum (int a, double b){
+        System.out.print("3-й метод.");
+        return a+b;
+    }
 }/*
 class Suma {
 public static void main(String[] args){
